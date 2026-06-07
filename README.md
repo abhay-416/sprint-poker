@@ -1,61 +1,131 @@
-# SprintPoker
-Real Time Agile Estimation Table
+# SprintPoker 🚀
 
+Real-Time Agile Estimation Platform built with Angular 20, TailwindCSS and Firebase.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.27.
+SprintPoker helps Agile teams conduct Planning Poker sessions for story estimation in real time. Team members can join a shared room, vote on story points, reveal cards, and reach consensus during Sprint Planning meetings.
 
-## Development server
+## Live Demo
 
-To start a local development server, run:
+Deployment URL:
+https://sprint-poker-0.vercel.app
+
+## Features
+
+### Room Management
+
+* Create Sprint Planning sessions
+* Join sessions using Room Code or Invite Link
+* Copy and share room links
+* Real-time participant tracking
+
+### Real-Time Collaboration
+
+* Live participant synchronization
+* Instant vote updates
+* Real-time card reveal
+* New round reset functionality
+
+### Agile Estimation
+
+* Fibonacci estimation deck
+* Consensus calculation
+* Average estimate calculation
+* Lowest and highest vote tracking
+
+### Facilitator Controls
+
+* Session facilitator role
+* Optional facilitator participation in voting
+* Observer mode support
+
+### Responsive UI
+
+* Mobile friendly
+* Tablet friendly
+* Desktop optimized
+* Dark modern interface
+
+## Technology Stack
+
+### Frontend
+
+* Angular 20
+* TypeScript
+* Angular Signals
+* RxJS
+* TailwindCSS
+
+### Backend & Realtime
+
+* Firebase Authentication
+* Firebase Realtime Database
+* Firebase Firestore
+
+### Deployment
+
+* Vercel
+
+## Architecture
+
+```text
+Angular UI
+      |
+Angular Services
+      |
+Firebase Authentication
+      |
+Firebase Realtime Database
+      |
+Realtime Synchronization
+```
+
+## Local Development
+
+Clone the repository:
+
+```bash
+git clone https://github.com/abhay-416/sprint-poker.git
+cd sprint-poker
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run locally:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```text
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Future Enhancements
 
-```bash
-ng generate --help
-```
+* Jira Integration
+* Story Management
+* Multiple Voting Decks
+* Team Analytics Dashboard
+* PWA Support
+* CI/CD Pipeline
+* Automated Testing
 
-## Building
+## Project Highlights
 
-To build the project run:
+* AI-assisted development using Antigravity
+* Real-time collaborative architecture
+* Modern Angular 20 implementation
+* Firebase-powered synchronization
+* Production deployment on Vercel
 
-```bash
-ng build
-```
+## Author
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Abhay Upadhayay
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Technical Lead | Java Full Stack | Angular | Cloud | AI Enthusiast
