@@ -23,7 +23,7 @@ export class FirebaseService {
       try {
         this.app = initializeApp(config);
         this.auth = getAuth(this.app);
-        this.db = getDatabase(this.app);
+        this.db = getDatabase(this.app, config.databaseURL);
         this.firestore = getFirestore(this.app);
       } catch (error) {
         console.error('Failed to initialize Firebase with provided credentials:', error);
