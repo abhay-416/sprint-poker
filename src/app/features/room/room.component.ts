@@ -174,6 +174,7 @@ export class RoomComponent implements OnInit, OnDestroy {
    * The prompt says: "Reveal Cards Button" in top bar or stats.
    */
   async onReveal() {
+    if (!this.currentUser()?.isFacilitator) return;
     await this.roomService.revealCards();
   }
 
@@ -181,6 +182,7 @@ export class RoomComponent implements OnInit, OnDestroy {
    * Reset round (yellow button)
    */
   async onNewRound() {
+    if (!this.currentUser()?.isFacilitator) return;
     await this.roomService.resetRound();
   }
 
